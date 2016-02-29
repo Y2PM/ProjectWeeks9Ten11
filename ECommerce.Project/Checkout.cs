@@ -10,7 +10,8 @@ namespace ECommerce.Project
     {
         public double calculatedPrice(Basket basket)
         {
-            return 0;
+
+            return basket.itemsList[0].price;
         }
 
         //OverLoad1:

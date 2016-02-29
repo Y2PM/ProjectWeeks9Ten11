@@ -8,9 +8,10 @@ namespace ECommerce.Project
 {
     public class Basket
     {
+        public List<Item> itemsList;
         int itemNumber = 0;
 
-        public Dictionary<int,Item> addItem(Item anItem)
+        public Dictionary<int,Item> addItem(Item anItem)//Maybe not required
         {
             Dictionary<int,Item> basket = new Dictionary<int,Item>();
             basket.Add(itemNumber++, anItem);
