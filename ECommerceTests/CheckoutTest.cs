@@ -19,7 +19,12 @@ namespace ECommerceTests
 
             //Assert
             Assert.AreEqual(0, price);
+        }
 
+        [TestMethod]
+        public void Test_Checkout_ReturnsPriceOfItem_WhenGivenABasketWithAnItemInIt()
+        {
+            
         }
     }
 }
