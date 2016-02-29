@@ -1,2 +1,7 @@
 H:\Documents\DotNET\C#Workspace\ECommerce\ECommerce.Project\bin\Debug\ECommerce.Project.exe.config
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\ECommerce.Project.exe.config
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\ECommerce.Project.exe
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\ECommerce.Project.pdb
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\obj\Debug\ECommerce.Project.csprojResolveAssemblyReference.cache
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\obj\Debug\ECommerce.Project.exe
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\obj\Debug\ECommerce.Project.pdb
