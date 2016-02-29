@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Project
 {
-    public class Items
+    public class Item
     {
-
+        public double price { get; set; }
+        public string itemName { get; set; }
     }
 }
