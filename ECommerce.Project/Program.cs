@@ -10,6 +10,7 @@ namespace ECommerce.Project
     {
         static void Main(string[] args)
         {
+            //stuff here
         }
     }
 }

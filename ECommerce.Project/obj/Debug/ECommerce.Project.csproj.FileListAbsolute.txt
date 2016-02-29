@@ -1,1 +1,2 @@
 H:\Documents\DotNET\C#Workspace\ECommerce\ECommerce.Project\bin\Debug\ECommerce.Project.exe.config
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\ECommerce.Project.exe.config
