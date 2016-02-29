@@ -8,7 +8,7 @@ namespace ECommerceTests
     public class CheckoutTest
     {
         [TestMethod]
-        public void Test_Checkout_ReturnsCalculatedPriceOf0_WhenGivenAnEmptyBasket()
+        public void Test_calculatedPrice_ReturnsCalculatedPriceOf0_WhenGivenAnEmptyBasket()
         {
             //Arrange
             Basket basket = new Basket();
@@ -22,9 +22,14 @@ namespace ECommerceTests
         }
 
         [TestMethod]
-        public void Test_Checkout_ReturnsPriceOfItem_WhenGivenABasketWithAnItemInIt()
+        public void Test_calculatedPrice_ReturnsPriceOfItem_WhenGivenABasketWithAnItemInIt()
         {
-            
+            //Arrange
+
+            //Act
+
+            //Assert
+
         }
     }
 }
