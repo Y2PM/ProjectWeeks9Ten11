@@ -61,7 +61,7 @@ namespace ECommerceTests
             item2.price = price2;
 
             basket1.itemsList.Add(item1);
-            basket1.itemsList.Add(item2);            
+            basket1.itemsList.Add(item2);
             //Act
             double priceCheck = checkout1.calculatedPrice(basket1);
 

@@ -24,11 +24,17 @@ namespace ECommerce.Project
 
         public Dictionary<int,Item> addItem(Item anItem)//Maybe not required
         {
-            Dictionary<int,Item> basket = new Dictionary<int,Item>();
-            basket.Add(itemNumber++, anItem);
-            return basket;
+            Dictionary<int,Item> aBasket = new Dictionary<int,Item>();
+            aBasket.Add(itemNumber++, anItem);
+            return aBasket;
         }
 
+        public Dictionary<int, Item> removeItem(Item anItem)
+        {
+            Dictionary<int, Item> aBasket = new Dictionary<int, Item>();
+            //Code to remove here.
+            return aBasket;
+        }
 
         
     }

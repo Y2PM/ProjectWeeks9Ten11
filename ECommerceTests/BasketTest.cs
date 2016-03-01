@@ -24,7 +24,11 @@ namespace ECommerceTests
             Assert.AreEqual(name, basket1[0].itemName);
         }
 
-
+        [TestMethod]
+        public void Test_removeItem_RemovesAnItem_WhenGivenAnItemToRemove()
+        {
+            
+        }
 
     }
 }
