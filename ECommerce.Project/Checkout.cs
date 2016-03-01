@@ -10,8 +10,13 @@ namespace ECommerce.Project
     {
         public double calculatedPrice(Basket basket)
         {
-            
-            return basket.itemsList[0].price;
+            double totalPrice = 0;
+            for (int i = 0; i < basket.itemsList.Count; i++)
+            {
+                totalPrice += basket.itemsList[i].price;
+            }
+
+            return totalPrice;
         }
 
         //OverLoad1:
