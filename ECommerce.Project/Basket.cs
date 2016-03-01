@@ -22,20 +22,24 @@ namespace ECommerce.Project
 
         int itemNumber = 0;
 
-        public Dictionary<int,Item> addItem(Item anItem)//Maybe not required
+        public Dictionary<int, Item> addItem(Item anItem)//Maybe not required
         {
-            Dictionary<int,Item> aBasket = new Dictionary<int,Item>();
+            Dictionary<int, Item> aBasket = new Dictionary<int, Item>();
             aBasket.Add(itemNumber++, anItem);
             return aBasket;
         }
 
-        public Dictionary<int, Item> removeItem(Item anItem)
+        public void removeItem(Item anItem, List<string> itemsList)
         {
-            Dictionary<int, Item> aBasket = new Dictionary<int, Item>();
-            //Code to remove here.
-            return aBasket;
+            for (int i = 0; i < itemsList.Count; i++)
+            {
+                if (anItem.itemName == itemsList[i].itemName)
+                {
+                    itemsList.Remove(itemsList[i].itemName);
+                }
+            }
         }
 
-        
+
     }
 }
