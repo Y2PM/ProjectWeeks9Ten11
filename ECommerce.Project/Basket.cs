@@ -29,13 +29,13 @@ namespace ECommerce.Project
             return aBasket;
         }
 
-        public void removeItem(Item anItem, List<string> itemsList)
+        public void removeItem(Item anItem, List<Item> itemsList)
         {
             for (int i = 0; i < itemsList.Count; i++)
             {
                 if (anItem.itemName == itemsList[i].itemName)
                 {
-                    itemsList.Remove(itemsList[i].itemName);
+                    itemsList.Remove(anItem,);
                 }
             }
         }
