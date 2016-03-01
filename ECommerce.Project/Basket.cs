@@ -8,7 +8,18 @@ namespace ECommerce.Project
 {
     public class Basket
     {
+
         public List<Item> itemsList;
+        public Basket(List<Item> givenItemsList)
+        {
+            itemsList = givenItemsList;
+        }
+
+        public Basket()
+        {
+            
+        }
+
         int itemNumber = 0;
 
         public Dictionary<int,Item> addItem(Item anItem)//Maybe not required

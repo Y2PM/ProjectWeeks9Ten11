@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ECommerce.Project;
 using Moq;
+using System.Collections.Generic;
 
 namespace ECommerceTests
 {
@@ -26,18 +27,19 @@ namespace ECommerceTests
         public void Test_calculatedPrice_ReturnsPriceOfItem_WhenGivenABasketWithAnItemInIt()
         {
             //Arrange
-            //Mock<Basket> basket = new Mock<Basket>();
-            //string name1 = "PocketWormHole";
+            
             double price1 = 100;
-            Basket basket = new Basket();
+            List<Item> itemsList = new List<Item>();
+            Basket basket1 = new Basket(itemsList);
             Checkout checkout = new Checkout();
             Item item1 = new Item();
-            //item1.itemName = name1;
+            
+            
             item1.price = price1;
 
-            basket.itemsList.Add(item1);
+            basket1.itemsList.Add(item1);
             //Act
-            double priceCheck = checkout.calculatedPrice(basket);
+            double priceCheck = checkout.calculatedPrice(basket1);
 
             //Assert
             Assert.AreEqual(price1, priceCheck);
