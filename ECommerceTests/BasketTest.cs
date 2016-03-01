@@ -27,7 +27,16 @@ namespace ECommerceTests
         [TestMethod]
         public void Test_removeItem_RemovesAnItem_WhenGivenAnItemToRemove()
         {
+            //Arrange
+            string name = "PocketWormHole";
+            Basket basket = new Basket();
+            Item item1 = new Item();
+            item1.itemName = name;
+            Dictionary<int, Item> basket1 = basket.addItem(item1);
+            //Act
             
+            //Assert
+
         }
 
     }
