@@ -20,24 +20,18 @@ namespace ECommerce.Project
         {
         }
 
-        int itemNumber = 0;
-
-        public Dictionary<int, Item> addItem(Item anItem)//Make this void
+        public void addItem(Item anItem, List<Item> itemsList)
         {
-            Dictionary<int, Item> aBasket = new Dictionary<int, Item>();
-            aBasket.Add(itemNumber++, anItem);
-            return aBasket;
+
+            itemsList.Add(anItem);
+         
         }
 
         public void removeItem(Item anItem, List<Item> itemsList)
         {
-            for (int i = 0; i < itemsList.Count; i++)
-            {
-                if (anItem.itemName == itemsList[i].itemName)
-                {
-                    itemsList.Remove(anItem);
-                }
-            }
+
+            itemsList.Remove(anItem);
+
         }
 
 

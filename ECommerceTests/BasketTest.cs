@@ -13,35 +13,35 @@ namespace ECommerceTests
         {
             //Arrange
             string name = "PocketWormHole";
-            Basket basket = new Basket();
+            List<Item> itemsList1 = new List<Item>();
+            Basket basket = new Basket(itemsList1);
             Item item1 = new Item();
             item1.itemName = name;
             
             //Act
-            Dictionary<int,Item> basket1 = basket.addItem(item1);
+            basket.addItem(item1, itemsList1);
 
             //Assert
-            Assert.AreEqual(name, basket1[0].itemName);
+            Assert.AreEqual(1, itemsList1.Count);
         }
 
         [TestMethod]
         public void Test_removeItem_RemovesAnItem_WhenGivenAnItemToRemove()
         {
             //Arrange
-            string name1 = "PocketWormHole";
-            string name2 = "NuclearWinterGenerator";
+
+            #region CoolNames
+            //string name1 = "PocketWormHole";
+            //string name2 = "NuclearWinterGenerator"; 
+            #endregion
 
             List<Item> itemsList1 = new List<Item>();
             Basket basket = new Basket(itemsList1);
             Item item1 = new Item();
             Item item2 = new Item();
 
-
-            item1.itemName = name1;
-            item2.itemName = name2;
-
-            basket.itemsList.Add(item1);
-            basket.itemsList.Add(item2);
+            basket.addItem(item1, itemsList1);
+            basket.addItem(item2, itemsList1);
 
             //Act
             basket.removeItem(item1, basket.itemsList);
