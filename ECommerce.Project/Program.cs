@@ -1,4 +1,5 @@
-﻿using log4net;
+﻿using DatabaseLibrary;
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,11 +16,23 @@ namespace ECommerce.Project
 
         static void Main(string[] args)
         {
+            Dump dump = new Dump();
+
+            List<item> itemDumpList = dump.GetItems();
+
+            foreach (var item in itemDumpList)
+            {
+                Console.WriteLine(item.item_name);
+            }
+            Console.ReadLine();
+
+            /*
             //Testing the logger function.
             string message = "Hello";
             Console.WriteLine(message);
             logger.Info(message);
             Console.ReadLine();
+            */
         }
     }
 }
