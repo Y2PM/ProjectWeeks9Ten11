@@ -43,13 +43,10 @@ namespace ECommerceTests
             basket.itemsList.Add(item1);
             basket.itemsList.Add(item2);
 
-            //Dictionary<int, Item> basket1 = basket.addItem(item1);
-            //basket1 = basket.addItem(item2);
-
             //Act
             basket.removeItem(item1, basket.itemsList);
             //Assert
-            Assert.AreEqual(null, basket[1].itemName);
+            Assert.AreEqual(1, basket.itemsList.Count);
         }
 
 

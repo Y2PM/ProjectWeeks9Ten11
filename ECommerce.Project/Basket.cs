@@ -22,7 +22,7 @@ namespace ECommerce.Project
 
         int itemNumber = 0;
 
-        public Dictionary<int, Item> addItem(Item anItem)//Maybe not required
+        public Dictionary<int, Item> addItem(Item anItem)//Make this void
         {
             Dictionary<int, Item> aBasket = new Dictionary<int, Item>();
             aBasket.Add(itemNumber++, anItem);
@@ -35,7 +35,7 @@ namespace ECommerce.Project
             {
                 if (anItem.itemName == itemsList[i].itemName)
                 {
-                    itemsList.Remove(anItem,);
+                    itemsList.Remove(anItem);
                 }
             }
         }
