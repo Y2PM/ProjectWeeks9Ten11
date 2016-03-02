@@ -24,7 +24,7 @@ namespace ECommerce.Project
         {
 
             itemsList.Add(anItem);
-         
+
         }
 
         public void removeItem(Item anItem, List<Item> itemsList)

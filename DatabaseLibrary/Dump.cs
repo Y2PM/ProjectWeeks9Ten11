@@ -8,7 +8,7 @@ namespace DatabaseLibrary
 {
     public class Dump
     {
-        public List<item> GetItems()
+        public List<item> GetItemsFromDB()
         {
             List<item> itemNameList = new List<item>();
 
@@ -20,6 +20,16 @@ namespace DatabaseLibrary
                 }
             }
             return itemNameList;
+        }
+
+        public void addItemtoDB(item anItem)
+        {
+            using (var context = new ECommerceProjectSystemEntities())
+            {
+                context.items.Add(anItem);
+                context.SaveChanges();
+            }
+
         }
     }
 }

@@ -16,15 +16,23 @@ namespace ECommerce.Project
 
         static void Main(string[] args)
         {
+            /*
+            //Testing the GetItems method
             Dump dump = new Dump();
 
-            List<item> itemDumpList = dump.GetItems();
+            List<item> itemDumpList = dump.GetItemsFromDB();
 
             foreach (var item in itemDumpList)
             {
                 Console.WriteLine(item.item_name);
             }
             Console.ReadLine();
+            */
+
+            //Testing adding an item to database
+            Dump dump = new Dump();
+            item item1 = new item() { item_name = "Money", item_price = "68" };//Temporarily a string for price
+            dump.addItemtoDB(item1);
 
             /*
             //Testing the logger function.
