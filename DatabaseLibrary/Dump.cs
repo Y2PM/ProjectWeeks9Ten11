@@ -8,11 +8,25 @@ namespace DatabaseLibrary
 {
     public class Dump
     {
+
+        ECommerceProjectSystemEntities context;//Injection.
+
+        public Dump(ECommerceProjectSystemEntities givenContext)//Construction.
+        {
+            context = givenContext;
+        }
+
+        //Constructor overload 1:
+        public Dump()
+        {
+
+        }
+
         public List<item> GetItemsFromDB()
         {
             List<item> itemNameList = new List<item>();
 
-            using (var context = new ECommerceProjectSystemEntities())
+            using (context)
             {
                 foreach (var item in context.items)
                 {
@@ -24,7 +38,7 @@ namespace DatabaseLibrary
 
         public void addItemtoDB(item anItem)
         {
-            using (var context = new ECommerceProjectSystemEntities())
+            using (context)
             {
                 context.items.Add(anItem);
                 context.SaveChanges();
