@@ -50,46 +50,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dump.cs" />
-    <Compile Include="DataModel_ECommerce.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataModel_ECommerce.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel_ECommerce.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataModel_ECommerce.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel_ECommerce.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataModel_ECommerce.edmx</DependentUpon>
-    </Compile>
     <Compile Include="item.cs">
-      <DependentUpon>DataModel_ECommerce.tt</DependentUpon>
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelData.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelData.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="DataModel_ECommerce.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DataModel_ECommerce.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="DataModel_ECommerce.Context.tt">
+    <EntityDeploy Include="ModelData.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelData.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ModelData.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DataModel_ECommerce.edmx</DependentUpon>
-      <LastGenOutput>DataModel_ECommerce.Context.cs</LastGenOutput>
+      <DependentUpon>ModelData.edmx</DependentUpon>
+      <LastGenOutput>ModelData.Context.cs</LastGenOutput>
     </None>
-    <None Include="DataModel_ECommerce.edmx.diagram">
-      <DependentUpon>DataModel_ECommerce.edmx</DependentUpon>
+    <None Include="ModelData.edmx.diagram">
+      <DependentUpon>ModelData.edmx</DependentUpon>
     </None>
-    <None Include="DataModel_ECommerce.tt">
+    <None Include="ModelData.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DataModel_ECommerce.edmx</DependentUpon>
-      <LastGenOutput>DataModel_ECommerce.cs</LastGenOutput>
+      <DependentUpon>ModelData.edmx</DependentUpon>
+      <LastGenOutput>ModelData.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

@@ -31,7 +31,7 @@ namespace ECommerce.Project
 
             //Testing adding an item to database
             Dump dump = new Dump();
-            item item1 = new item() { item_name = "Money", item_price = "68" };//Temporarily a string for price
+            item item1 = new item() { item_name = "Money", item_price = 68 };
             dump.addItemtoDB(item1);
 
             /*

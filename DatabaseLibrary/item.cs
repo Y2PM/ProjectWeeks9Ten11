@@ -15,6 +15,6 @@ namespace DatabaseLibrary
     public partial class item
     {
         public string item_name { get; set; }
-        public string item_price { get; set; }
+        public Nullable<decimal> item_price { get; set; }
     }
 }

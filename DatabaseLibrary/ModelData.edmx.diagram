@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f6a5a0329e634f26ab152ca700759a6b" Name="Diagram1">
+      <Diagram DiagramId="8fd78979a02f4eaabfe3d59cfd7d6062" Name="Diagram1">
         <EntityTypeShape EntityType="ECommerceProjectSystemModel.item" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
