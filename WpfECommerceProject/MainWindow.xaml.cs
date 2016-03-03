@@ -24,5 +24,10 @@ namespace WpfECommerceProject
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BuyButton.Content = "Buy button was clicked";
+        }
     }
 }
