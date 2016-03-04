@@ -15,17 +15,17 @@ namespace ECommerce.Project
             itemsList = givenItemsList;
         }
 
-        //Overload1:
-        public Basket()
-        {
-        }
+        ////Overload1:
+        //public Basket()
+        //{
+        //}
 
         public void addItem(Item anItem)
         {
             itemsList.Add(anItem);
         }
 
-        public void removeItem(Item anItem)//Removed List<Item> itemsList.
+        public void removeItem(Item anItem)
         {
             itemsList.Remove(anItem);
         }

@@ -32,7 +32,7 @@ namespace WpfECommerceProject
 
         private void LogInButton_Click(object sender, RoutedEventArgs e)
         {
-
+            LogInButton.Content = "Clicked login";
         }
     }
 }

@@ -19,11 +19,11 @@ namespace ECommerce.Project
             return totalPrice;
         }
 
-        //OverLoad1:
-        public double calculatedPrice()
-        {
-            return 0;
-        }
+        ////OverLoad1:
+        //public double calculatedPrice()
+        //{
+        //    return 0;
+        //}
 
     }
 }
