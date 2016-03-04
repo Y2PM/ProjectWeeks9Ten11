@@ -18,9 +18,8 @@ namespace ECommerceTests
             //Note: I need to be able to test this without actually using the database.
 
             //Arrange
-
             Mock<ECommerceProjectSystemEntities> MockECommerceProjectSystemEntities
-                = new Mock<ECommerceProjectSystemEntities>();//*********mocked context*********
+            = new Mock<ECommerceProjectSystemEntities>();//*********mocked context*********
 
             var mockSet = new Mock<DbSet<item>>();
 
@@ -49,7 +48,7 @@ namespace ECommerceTests
             CollectionAssert.AreEqual(data.ToList(), itemList);
         }
 
-        /*
+
         [TestMethod]
         public void Test_addItemtoDB_AddsAnItemToTheDataBase_WhenGivenAnItemToAdd()
         {
@@ -57,8 +56,8 @@ namespace ECommerceTests
 
             //*********mocked context*********:
             Mock<ECommerceProjectSystemEntities> MockECommerceProjectSystemEntities = new Mock<ECommerceProjectSystemEntities>();
+
             Dump dump = new Dump(MockECommerceProjectSystemEntities.Object);
-            item item1 = new item() { item_name = "Money", item_price = 68 };
 
             var mockSet = new Mock<DbSet<item>>();
 
@@ -75,15 +74,20 @@ namespace ECommerceTests
             mockSet.As<IQueryable<item>>().Setup(m => m.ElementType).Returns(data.ElementType);
             mockSet.As<IQueryable<item>>().Setup(m => m.GetEnumerator()).Returns(() => data.GetEnumerator());
 
+            item item1 = new item() { item_name = "Money", item_price = 68 };
+
             MockECommerceProjectSystemEntities.Setup(c => c.items).Returns(mockSet.Object);
+
+            int expectedValue = dump.GetItemsFromDB().Count + 1;
 
             //Act
             dump.addItemtoDB(item1);
 
             //Assert
-            CollectionAssert.AreEqual(data.ToList().Count+1, dump.ToList().Count);
-
+            //Assert.AreEqual(expectedValue, dump.GetItemsFromDB().Count);
+            MockECommerceProjectSystemEntities.Verify(m => m.SaveChanges(), Times.Once);
+            //MockECommerceProjectSystemEntities.Verify(m => m.items.Add(item1), Times.Once);
         }
-        */
+
     }
 }

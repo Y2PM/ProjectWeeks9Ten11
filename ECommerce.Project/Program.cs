@@ -36,6 +36,10 @@ namespace ECommerce.Project
             dump.addItemtoDB(item1);
             */
 
+            //Console.WriteLine(dump.GetItemsFromDB().Count);//Testing printing out # of item(s).
+            //Console.ReadLine();
+            
+
             /*
             //Testing the logger function.
             string message = "Hello";
