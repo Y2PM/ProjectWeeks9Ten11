@@ -15,15 +15,7 @@ namespace ECommerce.Project
             {
                 totalPrice += basket.itemsList[i].price;
             }
-
             return totalPrice;
         }
-
-        ////OverLoad1:
-        //public double calculatedPrice()
-        //{
-        //    return 0;
-        //}
-
     }
 }

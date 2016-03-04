@@ -15,11 +15,6 @@ namespace ECommerce.Project
             itemsList = givenItemsList;
         }
 
-        ////Overload1:
-        //public Basket()
-        //{
-        //}
-
         public void addItem(Item anItem)
         {
             itemsList.Add(anItem);

@@ -29,12 +29,6 @@ namespace ECommerceTests
         public void Test_removeItem_RemovesAnItem_WhenGivenAnItemToRemove()
         {
             //Arrange
-
-            #region CoolNames
-            //string name1 = "PocketWormHole";
-            //string name2 = "NuclearWinterGenerator"; 
-            #endregion
-
             List<Item> itemsList1 = new List<Item>();
             Basket basket = new Basket(itemsList1);
             Item item1 = new Item();
@@ -45,6 +39,7 @@ namespace ECommerceTests
 
             //Act
             basket.removeItem(item1);
+
             //Assert
             Assert.AreEqual(1, basket.itemsList.Count);
         }
