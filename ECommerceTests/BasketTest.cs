@@ -19,7 +19,7 @@ namespace ECommerceTests
             item1.itemName = name;
             
             //Act
-            basket.addItem(item1, itemsList1);
+            basket.addItem(item1);
 
             //Assert
             Assert.AreEqual(1, itemsList1.Count);
@@ -40,11 +40,11 @@ namespace ECommerceTests
             Item item1 = new Item();
             Item item2 = new Item();
 
-            basket.addItem(item1, itemsList1);
-            basket.addItem(item2, itemsList1);
+            basket.addItem(item1);
+            basket.addItem(item2);
 
             //Act
-            basket.removeItem(item1, basket.itemsList);
+            basket.removeItem(item1);
             //Assert
             Assert.AreEqual(1, basket.itemsList.Count);
         }

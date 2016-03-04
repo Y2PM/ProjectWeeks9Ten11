@@ -18,7 +18,7 @@ namespace ECommerce.Project
         {
             /*
             //Testing the GetItems method
-            Dump dump = new Dump();
+            Dump dump = new Dump(new ECommerceProjectSystemEntities());
 
             List<item> itemDumpList = dump.GetItemsFromDB();
 
@@ -31,7 +31,7 @@ namespace ECommerce.Project
 
             /*
             //Testing adding an item to database
-            Dump dump = new Dump();
+            Dump dump = new Dump(new ECommerceProjectSystemEntities());
             item item1 = new item() { item_name = "Money", item_price = 68 };
             dump.addItemtoDB(item1);
             */

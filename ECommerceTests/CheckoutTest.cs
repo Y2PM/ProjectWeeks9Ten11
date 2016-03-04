@@ -10,10 +10,10 @@ namespace ECommerceTests
     public class CheckoutTest
     {
         [TestMethod]
-        public void Test_calculatedPrice_ReturnsCalculatedPriceOf0_WhenGivenAnEmptyBasket()
+        public void Test_calculatedPrice_ReturnsCalculatedPriceOf0_WhenGivenAnEmptyBasket()//Give an empty basket, not nothing.
         {
             //Arrange
-            Basket basket = new Basket();
+            //Basket basket = new Basket();
             Checkout checkout = new Checkout();
 
             //Act

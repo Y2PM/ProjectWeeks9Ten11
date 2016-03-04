@@ -16,12 +16,6 @@ namespace DatabaseLibrary
             context = givenContext;
         }
 
-        //Constructor overload 1:
-        public Dump()
-        {
-
-        }
-
         public List<item> GetItemsFromDB()
         {
             List<item> itemNameList = new List<item>();

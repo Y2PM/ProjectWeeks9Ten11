@@ -20,18 +20,14 @@ namespace ECommerce.Project
         {
         }
 
-        public void addItem(Item anItem, List<Item> itemsList)
+        public void addItem(Item anItem)
         {
-
             itemsList.Add(anItem);
-
         }
 
-        public void removeItem(Item anItem, List<Item> itemsList)
+        public void removeItem(Item anItem)//Removed List<Item> itemsList.
         {
-
             itemsList.Remove(anItem);
-
         }
 
 
