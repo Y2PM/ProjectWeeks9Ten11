@@ -37,7 +37,7 @@ namespace ECommerce.Project
             */
 
             //Console.WriteLine(dump.GetItemsFromDB().Count);//Testing printing out # of item(s).
-            //Console.ReadLine();//test changes
+            //Console.ReadLine();
             
 
             /*
