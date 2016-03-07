@@ -13,3 +13,13 @@ C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\Ent
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\DatabaseLibrary.pdb
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\EntityFramework.xml
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\bin\Debug\ECommerce.Project.exe.config
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\bin\Debug\ECommerce.Project.exe
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\bin\Debug\ECommerce.Project.pdb
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\bin\Debug\DatabaseLibrary.dll
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\bin\Debug\log4net.dll
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\bin\Debug\DatabaseLibrary.pdb
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\bin\Debug\log4net.xml
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\obj\Debug\ECommerce.Project.csprojResolveAssemblyReference.cache
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\obj\Debug\ECommerce.Project.exe
+D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\obj\Debug\ECommerce.Project.pdb
