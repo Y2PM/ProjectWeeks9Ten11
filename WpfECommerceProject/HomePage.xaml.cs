@@ -16,13 +16,23 @@ using System.Windows.Shapes;
 namespace WpfECommerceProject
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for HomePage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HomePage : Page
     {
-        public MainWindow()
+        public HomePage()
         {
             InitializeComponent();
+        }
+
+        private void BuyButton_Click(object sender, RoutedEventArgs e)
+        {
+            BuyButton.Content = "Buy button was clicked";
+        }
+
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            LogInButton.Content = "Clicked login";
         }
     }
 }
