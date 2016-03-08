@@ -4,10 +4,35 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="300" d:DesignWidth="400"
 	Title="BuyItemsPage">
 
-    <Grid>
-        <TextBlock Text="Here you will soon be able to buy items."/>
+    <Page.Resources>
+        <Style x:Key="style1" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="FangSong"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Page.Resources>
+    
+    <Grid Background="Gray">
+        <TextBlock Text="Here you can buy items." TextAlignment="Center" Style="{StaticResource style1}" TextWrapping="Wrap" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2"/>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
     </Grid>
 </Page>

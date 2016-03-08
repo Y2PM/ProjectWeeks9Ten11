@@ -24,15 +24,5 @@ namespace WpfECommerceProject
         {
             InitializeComponent();
         }
-
-        private void BuyButton_Click(object sender, RoutedEventArgs e)
-        {
-            BuyButton.Content = "Buy button was clicked";
-        }
-
-        private void LogInButton_Click(object sender, RoutedEventArgs e)
-        {
-            LogInButton.Content = "Clicked login";
-        }
     }
 }

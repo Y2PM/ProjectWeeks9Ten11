@@ -26,12 +26,6 @@
             <Setter Property="FontFamily" Value="FangSong"/>
             <Setter Property="FontWeight" Value="Normal"/>
         </Style>
-
-        <Style x:Key="style4" TargetType="{x:Type Button}">
-            <Setter Property="FontSize" Value="11"/>
-            <Setter Property="FontFamily" Value="FangSong"/>
-            <Setter Property="FontWeight" Value="Normal"/>
-        </Style>
     </Page.Resources>
 
     <Page.DataContext>
@@ -46,32 +40,32 @@
         <Label Content="Username" Style="{StaticResource style3}" Grid.Row="1" Grid.Column="2"/>
         <PasswordBox Grid.Column="3" Grid.Row="2" />
 
-        <Button x:Name="LogInButton" Style="{StaticResource style2}" Grid.Column="3" Grid.Row="3" Click="LogInButton_Click" >
+        <Button x:Name="LogInButton" Style="{StaticResource style2}" Grid.Column="3" Grid.Row="3" >
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
             <Button.Background>
-                <SolidColorBrush Color="ForestGreen"/>
+                <SolidColorBrush Color="WhiteSmoke"/>
             </Button.Background>
             <TextBlock Text="Login" TextWrapping="Wrap"/>
         </Button>
 
-        <Button x:Name="BuyButton" Style="{StaticResource style2}" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2"  Click="BuyButton_Click">
+        <Button x:Name="BuyButton" Style="{StaticResource style2}" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" >
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
             <Button.Background>
-                <SolidColorBrush Color="ForestGreen"/>
+                <SolidColorBrush Color="WhiteSmoke"/>
             </Button.Background>
             <TextBlock Text="Click to buy basket contents" TextWrapping="Wrap"/>
         </Button>
 
-        <Button x:Name="NavigateToPageTwoButton" Style="{StaticResource style4}" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Command="{Binding navigateCommand}">
+        <Button x:Name="NavigateToPageTwoButton" Style="{StaticResource style2}" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Command="{Binding navigateCommand}">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
             <Button.Background>
-                <SolidColorBrush Color="ForestGreen"/>
+                <SolidColorBrush Color="WhiteSmoke"/>
             </Button.Background>
             <TextBlock Text="Items for sale page" TextWrapping="Wrap"/>
         </Button>
