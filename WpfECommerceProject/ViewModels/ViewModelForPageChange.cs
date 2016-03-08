@@ -24,6 +24,5 @@ namespace WpfECommerceProject.ViewModels
         {
             page = "HomePage.xaml";
         }
-
     }
 }

@@ -4,7 +4,7 @@
         xmlns:ViewModels="clr-namespace:WpfECommerceProject.ViewModels"
         Title="MainWindow" Height="350" Width="525">
 
-    <Frame Source="{Binding Page}"/>
+    <Frame Source="{Binding page}"/>
 
     <Window.DataContext>
         <ViewModels:ViewModelForPageChange/>
