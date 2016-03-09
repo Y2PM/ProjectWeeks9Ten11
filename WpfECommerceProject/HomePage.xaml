@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:vm="clr-namespace:WpfECommerceProject.ViewModels"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="400"
+      d:DesignHeight="390" d:DesignWidth="490"
 	Title="HomePage">
 
     <Page.Resources>

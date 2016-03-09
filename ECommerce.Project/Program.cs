@@ -16,7 +16,7 @@ namespace ECommerce.Project
 
         static void Main(string[] args)
         {
-            /*
+            
             //Testing the GetItems method
             Dump dump = new Dump(new ECommerceProjectSystemEntities());
 
@@ -27,7 +27,7 @@ namespace ECommerce.Project
                 Console.WriteLine(item.item_name);
             }
             Console.ReadLine();
-            */
+            
 
             /*
             //Testing adding an item to database
