@@ -61,6 +61,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AddItemToSellPageViewModelTest.cs" />
     <Compile Include="BasketTest.cs" />
     <Compile Include="DumpTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +75,10 @@
     <ProjectReference Include="..\ECommerce.Project\ECommerce.Project.csproj">
       <Project>{39419def-4ae8-40f2-b213-b48f3a063c18}</Project>
       <Name>ECommerce.Project</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfECommerceProject\WpfECommerceProject.csproj">
+      <Project>{adc913f6-180c-420d-9c2c-01b8e4b9da02}</Project>
+      <Name>WpfECommerceProject</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

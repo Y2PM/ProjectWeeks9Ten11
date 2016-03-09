@@ -8,7 +8,7 @@ using System.Windows.Input;
 
 namespace WpfECommerceProject.ViewModels
 {
-    class AddItemToSellPageViewModel : BaseViewModel
+    public class AddItemToSellPageViewModel : BaseViewModel
     {
         private string _price;
 
