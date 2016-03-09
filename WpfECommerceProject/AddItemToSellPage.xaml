@@ -3,9 +3,14 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:vm="clr-namespace:WpfECommerceProject.ViewModels"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="300" d:DesignWidth="400"
 	Title="AddItemToSellPage">
+
+    <Page.DataContext>
+        <vm:AddItemToSellPageViewModel/>
+    </Page.DataContext>
 
     <Page.Resources>
         <Style x:Key="style1" TargetType="{x:Type TextBlock}">
@@ -19,12 +24,33 @@
             <Setter Property="FontFamily" Value="FangSong"/>
             <Setter Property="FontWeight" Value="Normal"/>
         </Style>
-    </Page.Resources>
-    
-    <Grid Background="Gray">
-        <TextBlock Text="Add an item to database to sell" TextAlignment="Center" Style="{StaticResource style1}" TextWrapping="Wrap" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2"/>
 
-        <Button x:Name="Add" Style="{StaticResource style2}" Grid.Column="3" Grid.Row="2">
+        <Style x:Key="style3" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="FontFamily" Value="FangSong"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+        </Style>
+
+        <Style x:Key="style4" TargetType="{x:Type TextBox}">
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="FontFamily" Value="FangSong"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="Gray">
+        <TextBlock Text="Add an item to database to sell" TextAlignment="Center" Style="{StaticResource style1}" TextWrapping="Wrap" Grid.Column="1" Grid.ColumnSpan="4" Grid.Row="0" Grid.RowSpan="2"/>
+
+        <TextBlock Background="WhiteSmoke" Text="Item name" TextAlignment="Center" Style="{StaticResource style3}" TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" />
+        <TextBlock Background="WhiteSmoke" Text="Item price" TextAlignment="Center" Style="{StaticResource style3}" TextWrapping="Wrap" Grid.Column="2" Grid.Row="2" />
+        <TextBlock Background="WhiteSmoke" Text="Item Added" TextAlignment="Center" Style="{StaticResource style3}" TextWrapping="Wrap" Grid.Column="0" Grid.Row="4" />
+        <TextBlock Background="White" Text="{Binding name, Mode=TwoWay}" TextAlignment="Center" Style="{StaticResource style3}" TextWrapping="Wrap" Grid.Column="1" Grid.Row="4" />
+        <TextBlock Background="White" Text="{Binding price, Mode=TwoWay}" TextAlignment="Center" Style="{StaticResource style3}" TextWrapping="Wrap" Grid.Column="2" Grid.Row="4" />
+
+        <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding name}" TextAlignment="Center" Style="{StaticResource style4}"/>
+        <TextBox Grid.Column="2" Grid.Row="3" Text="{Binding price}" TextAlignment="Center" Style="{StaticResource style4}"/>
+
+        <Button x:Name="Add" Style="{StaticResource style2}" Grid.Column="3" Grid.Row="3" Command="{Binding addSomeItem}">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -33,10 +59,12 @@
             </Button.Background>
             <TextBlock Text="Add Item" TextWrapping="Wrap"/>
         </Button>
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>

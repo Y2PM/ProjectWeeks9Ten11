@@ -13,13 +13,13 @@ namespace WpfECommerceProject.ViewModels
 
         public ICommand SellPage
         {
-            get 
+            get
             {
-                if (_SellPageCommand==null)
+                if (_SellPageCommand == null)
                 {
                     _SellPageCommand = new Command(navigateToSell, canNavigateToSell);
                 }
-                return _SellPageCommand; 
+                return _SellPageCommand;
             }
             set { _SellPageCommand = value; }
         }
@@ -34,8 +34,8 @@ namespace WpfECommerceProject.ViewModels
             ViewModelForPageChange vm = App.Current.MainWindow.DataContext as ViewModelForPageChange;
             vm.page = "AddItemToSellPage.xaml";
         }
-               
-        
+
+
         //For sale page navigation:
         private ICommand _navigateCommand;
 

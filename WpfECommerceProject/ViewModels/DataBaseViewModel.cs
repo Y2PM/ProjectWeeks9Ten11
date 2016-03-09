@@ -35,7 +35,7 @@ namespace WpfECommerceProject.ViewModels
             items = new ObservableCollection<item>(dump.GetItemsFromDB());
         }
 
-        public DataBaseViewModel(Dump injectedDump)//Constructor for tests case using mock
+        public DataBaseViewModel(Dump injectedDump)//Constructor for test cases using mock
         {
             dump = injectedDump;
 
