@@ -9,6 +9,34 @@ namespace WpfECommerceProject.ViewModels
 {
     class HomePageViewModel : BaseViewModel
     {
+        private ICommand _SellPageCommand;
+
+        public ICommand SellPage
+        {
+            get 
+            {
+                if (_SellPageCommand==null)
+                {
+                    _SellPageCommand = new Command(navigateToSell, canNavigateToSell);
+                }
+                return _SellPageCommand; 
+            }
+            set { _SellPageCommand = value; }
+        }
+
+        private bool canNavigateToSell()
+        {
+            return true;
+        }
+
+        private void navigateToSell()
+        {
+            ViewModelForPageChange vm = App.Current.MainWindow.DataContext as ViewModelForPageChange;
+            vm.page = "AddItemToSellPage.xaml";
+        }
+               
+        
+        //For sale page navigation:
         private ICommand _navigateCommand;
 
         public ICommand navigateCommand

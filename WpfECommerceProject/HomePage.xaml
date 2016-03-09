@@ -40,7 +40,7 @@
                         <Grid>
                             <Ellipse x:Name="circle" Fill="WhiteSmoke"
                                      Stroke="Black" StrokeThickness="2"/>
-                            <TextBlock x:Name="circleTextBlock" Text="Buy Now"
+                            <TextBlock x:Name="circleTextBlock" Text="Checkout"
                              VerticalAlignment="Center" 
                              HorizontalAlignment="Center" TextWrapping="Wrap"/>
                         </Grid>
@@ -62,7 +62,7 @@
                         <Grid>
                             <Ellipse x:Name="circle" Fill="WhiteSmoke"
                                      Stroke="Black" StrokeThickness="2"/>
-                            <TextBlock x:Name="circleTextBlock" Text="Items for sale"
+                            <TextBlock x:Name="circleTextBlock" Text="Buy"
                              VerticalAlignment="Center" 
                              HorizontalAlignment="Center" TextWrapping="Wrap"/>
                         </Grid>
@@ -77,6 +77,27 @@
             </Setter>
         </Style>
 
+        <Style x:Key="NavigateToAddItemsPageButtonStyle" BasedOn="{StaticResource circleButtonStyle}" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse x:Name="circle" Fill="WhiteSmoke"
+                                     Stroke="Black" StrokeThickness="2"/>
+                            <TextBlock x:Name="circleTextBlock" Text="Sell"
+                             VerticalAlignment="Center" 
+                             HorizontalAlignment="Center" TextWrapping="Wrap"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="circle" 
+                                    Property="Stroke" Value="Red"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Page.Resources>
 
     <Page.DataContext>
@@ -91,7 +112,7 @@
         <Label Content="Username" Style="{StaticResource style3}" Grid.Row="1" Grid.Column="2"/>
         <PasswordBox Grid.Column="3" Grid.Row="2" />
 
-        <Button x:Name="LogInButton" Style="{StaticResource style2}" Grid.Column="3" Grid.Row="3" >
+        <Button x:Name="LogInButton" Style="{StaticResource style2}" Grid.Column="3" Grid.Row="3">
             <Button.Foreground>
                 <SolidColorBrush Color="Black"/>
             </Button.Foreground>
@@ -101,26 +122,12 @@
             <TextBlock Text="Login" TextWrapping="Wrap"/>
         </Button>
 
-        <Button x:Name="BuyButton" Style="{StaticResource BuyButtonStyle}" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" >
-            <Button.Foreground>
-                <SolidColorBrush Color="Black"/>
-            </Button.Foreground>
-            <Button.Background>
-                <SolidColorBrush Color="WhiteSmoke"/>
-            </Button.Background>
-            <TextBlock Text="Click to buy basket contents" />
-        </Button>
+        <Button x:Name="CheckoutButton" Style="{StaticResource BuyButtonStyle}" Grid.Column="0" Grid.Row="5" Grid.RowSpan="2"/>
 
-        <Button x:Name="NavigateToPageTwoButton" Style="{StaticResource NavigateToPageTwoButtonStyle}" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Command="{Binding navigateCommand}">
-            <Button.Foreground>
-                <SolidColorBrush Color="Black"/>
-            </Button.Foreground>
-            <Button.Background>
-                <SolidColorBrush Color="WhiteSmoke"/>
-            </Button.Background>
-            <TextBlock Text="Items for sale page" TextWrapping="Wrap"/>
-        </Button>
+        <Button x:Name="BuyButton" Style="{StaticResource NavigateToPageTwoButtonStyle}" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Command="{Binding navigateCommand}"/>
 
+        <Button x:Name="SellButton" Style="{StaticResource NavigateToAddItemsPageButtonStyle}" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" Command="{Binding SellPage}"/>
+        
         <Label Style="{StaticResource style1}" HorizontalContentAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Content="ECommerce Site"/>
 
         <Grid.ColumnDefinitions>
@@ -133,6 +140,8 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.8*"/>
             <RowDefinition Height="0.8*"/>
             <RowDefinition Height="0.8*"/>
             <RowDefinition Height="0.8*"/>

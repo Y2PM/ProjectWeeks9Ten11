@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddItemToSellPage.xaml.cs">
+      <DependentUpon>AddItemToSellPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BuyItemsPage.xaml.cs">
       <DependentUpon>BuyItemsPage.xaml</DependentUpon>
     </Compile>
@@ -68,6 +71,10 @@
     <Compile Include="ViewModels\DataBaseViewModel.cs" />
     <Compile Include="ViewModels\HomePageViewModel.cs" />
     <Compile Include="ViewModels\ViewModelForPageChange.cs" />
+    <Page Include="AddItemToSellPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BuyItemsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
