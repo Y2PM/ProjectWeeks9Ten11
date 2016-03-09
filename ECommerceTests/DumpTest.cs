@@ -84,9 +84,7 @@ namespace ECommerceTests
             dump.addItemtoDB(item1);
 
             //Assert
-            //Assert.AreEqual(expectedValue, dump.GetItemsFromDB().Count);
             MockECommerceProjectSystemEntities.Verify(m => m.SaveChanges(), Times.Once);
-            //MockECommerceProjectSystemEntities.Verify(m => m.items.Add(item1), Times.Once);
         }
 
     }

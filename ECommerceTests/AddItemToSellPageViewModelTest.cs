@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WpfECommerceProject.ViewModels;
+using DatabaseLibrary;
 
 namespace ECommerceTests
 {
@@ -19,10 +20,20 @@ namespace ECommerceTests
             Assert.AreEqual(true, addbool2);
         }
 
+        /*
         [TestMethod]
-        public void Test_addToDB_AddsItemToDataBase_WhenGivenAnItemToAdd()
+        public void Test_addToDB_AddsItemToDataBase_WhenCalled()
         {
-            
+            //Arrange
+            string name = "John";
+            string price = "20";
+            Dump dump = new Dump(new ECommerceProjectSystemEntities());
+            item item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
+            //Act
+
+            //Assert
+
         }
+        */
     }
 }
