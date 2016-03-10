@@ -24,9 +24,15 @@ namespace ECommerce.Project
 
             foreach (var item in itemDumpList)
             {
-                Console.WriteLine(item.item_name);
+                Console.WriteLine(item.item_name + " £" + item.item_price + "p");
             }
             Console.ReadLine();
+            */
+
+            /*
+            //Testing delete item in data base.
+            Dump dump = new Dump(new ECommerceProjectSystemEntities());            
+            dump.deleteItem("name here");
             */
 
             /*
@@ -39,7 +45,12 @@ namespace ECommerce.Project
             //Console.WriteLine(dump.GetItemsFromDB().Count);//Testing printing out # of item(s).
             //Console.ReadLine();
             
-
+            /*
+            //Testing update item in database:
+            Dump dump = new Dump(new ECommerceProjectSystemEntities());
+            dump.updateItemPrice("NuclearWinterGenerator", 3000);
+            */
+            
             /*
             //Testing the logger function.
             string message = "Hello";

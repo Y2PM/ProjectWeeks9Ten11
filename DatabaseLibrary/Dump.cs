@@ -37,9 +37,30 @@ namespace DatabaseLibrary
                 context.items.Add(anItem);
                 context.SaveChanges();
             }
-
         }
 
-        //public 
+        public void updateItemPrice(string itemNameToFind, decimal NewPrice)
+        {
+            using (context)
+            {
+                var iteM = context.items.Find(itemNameToFind);
+                iteM.item_price = NewPrice;
+                context.SaveChanges();
+            }
+        }
+
+        public void deleteItem(string itemName)
+        {
+            using (context)
+            {
+                var iteMs = context.items.Where(x => x.item_name == itemName);
+
+                foreach (var itemm in iteMs)
+                {
+                    context.items.Remove(itemm);
+                }
+                context.SaveChanges();
+            }
+        }
     }
 }
