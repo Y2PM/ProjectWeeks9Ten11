@@ -62,7 +62,7 @@ namespace WpfECommerceProject.ViewModels
 
         /*
         //Injection.
-        Dump dump = new Dump(new ECommerceProjectSystemEntities());
+        Dump dump;
         item item1 = new item();
 
         public AddItemToSellPageViewModel(Dump givenDump, item givenItem1)
@@ -70,12 +70,8 @@ namespace WpfECommerceProject.ViewModels
             dump = givenDump;
             item1 = givenItem1;
         }
-
-        public AddItemToSellPageViewModel()
-        {
-
-        }
         */
+
 
         private void addToDB()
         {
@@ -83,5 +79,6 @@ namespace WpfECommerceProject.ViewModels
             item item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
             dump.addItemtoDB(item1);
         }
+
     }
 }
