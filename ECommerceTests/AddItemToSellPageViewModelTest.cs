@@ -2,6 +2,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WpfECommerceProject.ViewModels;
 using DatabaseLibrary;
+using Moq;
+using System.Data.Entity;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ECommerceTests
 {
@@ -11,7 +15,6 @@ namespace ECommerceTests
         [TestMethod]
         public void Test_canAddToDB_ReturnsTrue_WhenCalled()
         {
-
             #region referenceUrl
             //http://stackoverflow.com/questions/9122708/unit-testing-private-methods-in-c-sharp 
             //Class target = new Class();
@@ -22,31 +25,47 @@ namespace ECommerceTests
             //Arrange
             AddItemToSellPageViewModel addbool = new AddItemToSellPageViewModel();
             PrivateObject obj = new PrivateObject(addbool);
+
             //Act
             Boolean addbool2 = (Boolean)obj.Invoke("canAddToDB");
+
             //Assert
             Assert.AreEqual(true, addbool2);
         }
 
-        /*
+
         [TestMethod]
         public void Test_addToDB_AddsItemToDataBase_WhenCalled()
         {
-            //Make a mock object
-
             //Arrange
-            string name = "John";
-            string price = "20";
-            Dump dump = new Dump(new ECommerceProjectSystemEntities());
-            item item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
 
-            AddItemToSellPageViewModel addToDB = new AddItemToSellPageViewModel(dump, item1);
-            PrivateObject obj = new PrivateObject(addToDB);
+            Mock<ECommerceProjectSystemEntities> MockECommerceProjectSystemEntities = new Mock<ECommerceProjectSystemEntities>();
+            Mock<Dump> dump = new Mock<Dump>(MockECommerceProjectSystemEntities.Object);
+            Mock<item> item1 = new Mock<item>();
+
+            var mockSet = new Mock<DbSet<item>>();
+
+            //Initial Pretend Data:
+            var data = new List<item>
+            {
+                new item { item_name = "PocketWormHole", item_price = 50 },
+                new item { item_name = "NuclearWinterGenerator", item_price = 2000 },
+            }.AsQueryable();
+
+            //Making a Mockset:
+            mockSet.As<IQueryable<item>>().Setup(m => m.Provider).Returns(data.Provider);
+            mockSet.As<IQueryable<item>>().Setup(m => m.Expression).Returns(data.Expression);
+            mockSet.As<IQueryable<item>>().Setup(m => m.ElementType).Returns(data.ElementType);
+            mockSet.As<IQueryable<item>>().Setup(m => m.GetEnumerator()).Returns(() => data.GetEnumerator());
+
+            MockECommerceProjectSystemEntities.Setup(c => c.items).Returns(mockSet.Object);//Stub
+
+            AddItemToSellPageViewModel addToDBClass = new AddItemToSellPageViewModel(dump.Object, item1.Object);
             //Act
-            obj.Invoke("addToDB(item1)");
+            addToDBClass.addToDB();
             //Assert
-
+            dump.Verify(x => x.addItemtoDB(It.IsAny<item>()));
         }
-        */
+
     }
 }

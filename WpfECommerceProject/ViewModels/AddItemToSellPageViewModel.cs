@@ -34,10 +34,22 @@ namespace WpfECommerceProject.ViewModels
             }
         }
 
+        //Injection.
+        Dump dump;
+        item item1 = new item();
+
+        public AddItemToSellPageViewModel(Dump givenDump, item givenItem1)
+        {
+            dump = givenDump;
+            item1 = givenItem1;
+        }
+
         public AddItemToSellPageViewModel()
         {
             name = "name here";
-            price = "price here";
+            price = "0";
+            dump = new Dump(new ECommerceProjectSystemEntities());
+            item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
         }
         /////////////////////////////////////////////////////
         private ICommand _addSomeItem;
@@ -59,26 +71,10 @@ namespace WpfECommerceProject.ViewModels
         {
             return true;//Could add logic to check if this item already exists.
         }
-
-        /*
-        //Injection.
-        Dump dump;
-        item item1 = new item();
-
-        public AddItemToSellPageViewModel(Dump givenDump, item givenItem1)
+                
+        public virtual void addToDB()//Needs to be virtual to be tested using moq.
         {
-            dump = givenDump;
-            item1 = givenItem1;
-        }
-        */
-
-
-        private void addToDB()
-        {
-            Dump dump = new Dump(new ECommerceProjectSystemEntities());
-            item item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
             dump.addItemtoDB(item1);
         }
-
     }
 }

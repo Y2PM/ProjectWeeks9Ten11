@@ -30,7 +30,7 @@ namespace DatabaseLibrary
             return itemNameList;
         }
 
-        public void addItemtoDB(item anItem)
+        public virtual void addItemtoDB(item anItem)
         {
             using (context)
             {
@@ -39,5 +39,7 @@ namespace DatabaseLibrary
             }
 
         }
+
+        //public 
     }
 }
