@@ -28,9 +28,9 @@ namespace WpfECommerceProject.ViewModels
             price = "0";
 
             oldName = name;
-            
+
             dump = new Dump(new ECommerceProjectSystemEntities());
-            item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
+
         }
         //------------------------------------------------        
 
@@ -79,13 +79,12 @@ namespace WpfECommerceProject.ViewModels
         {
             return true;//Could add logic to check if this item already exists.
         }
-                
+
         public virtual void addToDB()//Needs to be virtual to be tested using moq.
         {
-            if (oldName!=name)//If the name changes, update item spec.
-            {
-                item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
-            }
+
+            item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
+
             dump.addItemtoDB(item1);
         }
     }
