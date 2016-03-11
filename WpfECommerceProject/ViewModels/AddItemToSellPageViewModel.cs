@@ -13,13 +13,14 @@ namespace WpfECommerceProject.ViewModels
         //Injection.
         Dump dump;
         item item1 = new item();
-        string oldName;
+       
 
         public AddItemToSellPageViewModel(Dump givenDump, item givenItem1)
         {
             dump = givenDump;
             item1 = givenItem1;
-            oldName = name;
+            name = "name here"; 
+            price = "0";
         }
 
         public AddItemToSellPageViewModel()
@@ -27,7 +28,7 @@ namespace WpfECommerceProject.ViewModels
             name = "name here";
             price = "0";
 
-            oldName = name;
+            
 
             dump = new Dump(new ECommerceProjectSystemEntities());
 
@@ -60,6 +61,32 @@ namespace WpfECommerceProject.ViewModels
 
 
         /////////////////////////////////////////////////////
+        private ICommand _removeSomeItem;
+
+        public ICommand removeSomeItem
+        {
+            get 
+            {
+                if (_removeSomeItem == null)
+                {
+                    _removeSomeItem = new Command(removeItem, canRemoveItem);
+                }
+                return _removeSomeItem; 
+            }
+            set { _removeSomeItem = value; }
+        }
+
+        private bool canRemoveItem()
+        {
+            return true;//Can add logic to check item exists in data base.
+        }
+
+        private void removeItem()
+        {
+            dump.deleteItem(name);
+        }
+
+        //
         private ICommand _addSomeItem;
 
         public ICommand addSomeItem
