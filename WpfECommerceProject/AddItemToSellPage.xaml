@@ -72,6 +72,17 @@
         </Button>
         <!--delete item user interface-->
 
+        <!--update item user interface:-->
+        <Button x:Name="UpdateButton" Style="{StaticResource style2}" Grid.Column="3" Grid.Row="1" Command="{Binding update}">
+            <Button.Foreground>
+                <SolidColorBrush Color="Black"/>
+            </Button.Foreground>
+            <Button.Background>
+                <SolidColorBrush Color="DarkKhaki"/>
+            </Button.Background>
+            <TextBlock Text="Update" TextWrapping="Wrap"/>
+        </Button>
+        <!--update item user interface-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>

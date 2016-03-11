@@ -13,13 +13,13 @@ namespace WpfECommerceProject.ViewModels
         //Injection.
         Dump dump;
         item item1 = new item();
-       
+
 
         public AddItemToSellPageViewModel(Dump givenDump, item givenItem1)
         {
             dump = givenDump;
             item1 = givenItem1;
-            name = "name here"; 
+            name = "name here";
             price = "0";
         }
 
@@ -28,7 +28,7 @@ namespace WpfECommerceProject.ViewModels
             name = "name here";
             price = "0";
 
-            
+
 
             dump = new Dump(new ECommerceProjectSystemEntities());
 
@@ -65,13 +65,13 @@ namespace WpfECommerceProject.ViewModels
 
         public ICommand removeSomeItem
         {
-            get 
+            get
             {
                 if (_removeSomeItem == null)
                 {
                     _removeSomeItem = new Command(removeItem, canRemoveItem);
                 }
-                return _removeSomeItem; 
+                return _removeSomeItem;
             }
             set { _removeSomeItem = value; }
         }
@@ -114,5 +114,32 @@ namespace WpfECommerceProject.ViewModels
 
             dump.addItemtoDB(item1);
         }
+        //-------------
+        private ICommand _update;
+
+        public ICommand update
+        {
+            get
+            {
+                if (_update == null)
+                {
+                    _update = new Command(updateIteM, canUpdateIteM);
+                }
+                return _update;
+            }
+            set { _update = value; }
+        }
+
+        private bool canUpdateIteM()
+        {
+            return true;
+        }
+
+        private void updateIteM()
+        {
+            dump.updateItemPrice(name, Int32.Parse(price));
+        }
+
+        //
     }
 }
