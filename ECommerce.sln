@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseLibrary", "Database
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfECommerceProject", "WpfECommerceProject\WpfECommerceProject.csproj", "{ADC913F6-180C-420D-9C2C-01B8E4B9DA02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFHost", "WCFHost\WCFHost.csproj", "{B477CB1B-902C-49C7-85C8-50EC0C45D6E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFService", "WCFService\WCFService.csproj", "{F5D3D7CE-4D17-4B0B-84F1-22190F271A6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +42,14 @@ Global
 		{ADC913F6-180C-420D-9C2C-01B8E4B9DA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADC913F6-180C-420D-9C2C-01B8E4B9DA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADC913F6-180C-420D-9C2C-01B8E4B9DA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B477CB1B-902C-49C7-85C8-50EC0C45D6E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B477CB1B-902C-49C7-85C8-50EC0C45D6E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B477CB1B-902C-49C7-85C8-50EC0C45D6E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B477CB1B-902C-49C7-85C8-50EC0C45D6E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D3D7CE-4D17-4B0B-84F1-22190F271A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D3D7CE-4D17-4B0B-84F1-22190F271A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D3D7CE-4D17-4B0B-84F1-22190F271A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D3D7CE-4D17-4B0B-84F1-22190F271A6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -72,6 +72,7 @@
     <Compile Include="ViewModels\DataBaseViewModel.cs" />
     <Compile Include="ViewModels\HomePageViewModel.cs" />
     <Compile Include="ViewModels\ViewModelForPageChange.cs" />
+    <Compile Include="ViewModels\WCFClient.cs" />
     <Page Include="AddItemToSellPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
