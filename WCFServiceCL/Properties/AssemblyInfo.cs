@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WCFService")]
+[assembly: AssemblyTitle("WCFServiceCL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("FDM GROUP")]
-[assembly: AssemblyProduct("WCFService")]
+[assembly: AssemblyProduct("WCFServiceCL")]
 [assembly: AssemblyCopyright("Copyright © FDM GROUP 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7fc3875d-5463-4eb7-a492-2a430ab1454d")]
+[assembly: Guid("34b00ee9-e8cf-4d2d-a4c6-d1e1173683a8")]
 
 // Version information for an assembly consists of the following four values:
 //

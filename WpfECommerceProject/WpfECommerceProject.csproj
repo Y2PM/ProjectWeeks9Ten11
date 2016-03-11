@@ -43,6 +43,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -132,6 +133,14 @@
     <ProjectReference Include="..\DatabaseLibrary\DatabaseLibrary.csproj">
       <Project>{9bb6a337-436f-4cc4-a045-287ab66bd740}</Project>
       <Name>DatabaseLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCFHostCL\WCFHostCL.csproj">
+      <Project>{3574fcb7-7b79-4105-9f02-daacbd3a4dc5}</Project>
+      <Name>WCFHostCL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WCFServiceCL\WCFServiceCL.csproj">
+      <Project>{0b67e851-b12e-4b48-bd40-425ca2d1aad7}</Project>
+      <Name>WCFServiceCL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

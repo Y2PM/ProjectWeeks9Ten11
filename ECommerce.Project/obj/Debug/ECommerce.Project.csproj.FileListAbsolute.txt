@@ -25,3 +25,5 @@ D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\obj\Debug\EComme
 D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\obj\Debug\ECommerce.Project.pdb
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WpfECommerceProject.exe
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WpfECommerceProject.pdb
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WCFServiceCL.dll
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WCFServiceCL.pdb
