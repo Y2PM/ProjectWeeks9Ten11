@@ -23,3 +23,5 @@ D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\bin\Debug\log4ne
 D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\obj\Debug\ECommerce.Project.csprojResolveAssemblyReference.cache
 D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\obj\Debug\ECommerce.Project.exe
 D:\Users\joesa_000\Desktop\FDM Project folder\ECommerce.Project\obj\Debug\ECommerce.Project.pdb
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WpfECommerceProject.exe
+C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WpfECommerceProject.pdb

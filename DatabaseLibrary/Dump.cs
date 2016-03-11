@@ -16,7 +16,7 @@ namespace DatabaseLibrary
             context = givenContext;
         }
 
-        public List<item> GetItemsFromDB()
+        public List<item> GetItemsFromDB()//:=Read
         {
             List<item> itemNameList = new List<item>();
 
@@ -30,7 +30,7 @@ namespace DatabaseLibrary
             return itemNameList;
         }
 
-        public virtual void addItemtoDB(item anItem)
+        public virtual void addItemtoDB(item anItem)//:=Write
         {
             using (context)
             {
@@ -39,7 +39,7 @@ namespace DatabaseLibrary
             }
         }
 
-        public void updateItemPrice(string itemNameToFind, decimal NewPrice)
+        public void updateItemPrice(string itemNameToFind, decimal NewPrice)//:=Update
         {
             using (context)
             {
@@ -49,7 +49,7 @@ namespace DatabaseLibrary
             }
         }
 
-        public void deleteItem(string itemName)
+        public void deleteItem(string itemName)//:=Delete
         {
             using (context)
             {

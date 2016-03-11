@@ -66,6 +66,10 @@
       <Project>{9bb6a337-436f-4cc4-a045-287ab66bd740}</Project>
       <Name>DatabaseLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WpfECommerceProject\WpfECommerceProject.csproj">
+      <Project>{adc913f6-180c-420d-9c2c-01b8e4b9da02}</Project>
+      <Name>WpfECommerceProject</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

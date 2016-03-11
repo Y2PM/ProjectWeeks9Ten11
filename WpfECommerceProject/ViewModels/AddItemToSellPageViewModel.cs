@@ -10,6 +10,30 @@ namespace WpfECommerceProject.ViewModels
 {
     public class AddItemToSellPageViewModel : BaseViewModel
     {
+        //Injection.
+        Dump dump;
+        item item1 = new item();
+        string oldName;
+
+        public AddItemToSellPageViewModel(Dump givenDump, item givenItem1)
+        {
+            dump = givenDump;
+            item1 = givenItem1;
+            oldName = name;
+        }
+
+        public AddItemToSellPageViewModel()
+        {
+            name = "name here";
+            price = "0";
+
+            oldName = name;
+            
+            dump = new Dump(new ECommerceProjectSystemEntities());
+            item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
+        }
+        //------------------------------------------------        
+
         private string _price;
 
         public string price
@@ -34,23 +58,7 @@ namespace WpfECommerceProject.ViewModels
             }
         }
 
-        //Injection.
-        Dump dump;
-        item item1 = new item();
 
-        public AddItemToSellPageViewModel(Dump givenDump, item givenItem1)
-        {
-            dump = givenDump;
-            item1 = givenItem1;
-        }
-
-        public AddItemToSellPageViewModel()
-        {
-            name = "name here";
-            price = "0";
-            dump = new Dump(new ECommerceProjectSystemEntities());
-            item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
-        }
         /////////////////////////////////////////////////////
         private ICommand _addSomeItem;
 
@@ -74,6 +82,10 @@ namespace WpfECommerceProject.ViewModels
                 
         public virtual void addToDB()//Needs to be virtual to be tested using moq.
         {
+            if (oldName!=name)//If the name changes, update item spec.
+            {
+                item1 = new item() { item_name = name, item_price = Int32.Parse(price) };
+            }
             dump.addItemtoDB(item1);
         }
     }
