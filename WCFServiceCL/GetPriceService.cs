@@ -8,11 +8,13 @@ namespace WCFService
 {
     public class GetPriceService : IGetPriceService
     {
-        int thePrice = 10;
+        GetPrice thePriceO = new GetPrice();
+        
 
         public int GetPrice()
         {
-            return thePrice;
+            thePriceO.thePrice = 10;//Here can get data from database / entity frame work maybe.
+            return thePriceO.thePrice;
         }
     }
 }

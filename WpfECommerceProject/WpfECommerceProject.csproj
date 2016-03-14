@@ -67,18 +67,24 @@
     <Compile Include="BuyItemsPage.xaml.cs">
       <DependentUpon>BuyItemsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CheckoutPage.xaml.cs">
+      <DependentUpon>CheckoutPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\AddItemToSellPageViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\Command.cs" />
     <Compile Include="ViewModels\DataBaseViewModel.cs" />
     <Compile Include="ViewModels\HomePageViewModel.cs" />
     <Compile Include="ViewModels\ViewModelForPageChange.cs" />
-    <Compile Include="ViewModels\WCFClient.cs" />
     <Page Include="AddItemToSellPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BuyItemsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CheckoutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -133,10 +139,6 @@
     <ProjectReference Include="..\DatabaseLibrary\DatabaseLibrary.csproj">
       <Project>{9bb6a337-436f-4cc4-a045-287ab66bd740}</Project>
       <Name>DatabaseLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WCFHostCL\WCFHostCL.csproj">
-      <Project>{3574fcb7-7b79-4105-9f02-daacbd3a4dc5}</Project>
-      <Name>WCFHostCL</Name>
     </ProjectReference>
     <ProjectReference Include="..\WCFServiceCL\WCFServiceCL.csproj">
       <Project>{0b67e851-b12e-4b48-bd40-425ca2d1aad7}</Project>
