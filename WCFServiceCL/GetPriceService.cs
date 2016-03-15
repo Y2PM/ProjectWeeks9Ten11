@@ -25,7 +25,7 @@ namespace WCFService
                 totprice += (decimal)iteM.item_price;
             }
 
-            thePriceO.thePrice = totprice;//Here can get data from database / entity frame work maybe.
+            thePriceO.thePrice = totprice;//Here can get data from database / entity frame work maybe [done].
             return thePriceO.thePrice;
         }
     }
