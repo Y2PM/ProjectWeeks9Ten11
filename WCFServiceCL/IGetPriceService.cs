@@ -11,6 +11,6 @@ namespace WCFService
     public interface IGetPriceService
     {
         [OperationContract]
-        int GetPrice();
+        decimal GetPrice();
     }
 }

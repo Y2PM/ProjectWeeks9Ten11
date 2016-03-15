@@ -11,6 +11,6 @@ namespace WCFService
     public class GetPrice
     {
         [DataMember]
-        public int thePrice { get; set; }//serialisable
+        public decimal thePrice { get; set; }//serialisable
     }
 }

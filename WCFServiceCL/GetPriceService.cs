@@ -10,21 +10,22 @@ namespace WCFService
     public class GetPriceService : IGetPriceService
     {
         GetPrice thePriceO = new GetPrice();
-        //Dump dump = new Dump(new ECommerceProjectSystemEntities());
+        Dump dump = new Dump(new ECommerceProjectSystemEntities());
+        decimal totprice;
 
-        public int GetPrice()
+        public decimal GetPrice()
         {
 
 
-            //List<item> items = dump.GetItemsFromDB();
-            //decimal totprice;
+            List<item> items = dump.GetItemsFromDB();
+            
 
-            //foreach (item iteM in items)
-            //{
-            //    totprice += (decimal)iteM.item_price;
-            //}
+            foreach (item iteM in items)
+            {
+                totprice += (decimal)iteM.item_price;
+            }
 
-            thePriceO.thePrice = 10;//Here can get data from database / entity frame work maybe.
+            thePriceO.thePrice = totprice;//Here can get data from database / entity frame work maybe.
             return thePriceO.thePrice;
         }
     }

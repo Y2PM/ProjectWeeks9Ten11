@@ -36,7 +36,7 @@ namespace WpfECommerceProject.ViewModels
             items = new ObservableCollection<item>(dump.GetItemsFromDB());
 
             //
-            thePrice = new ObservableCollection<int>();
+            thePrice = new ObservableCollection<decimal>();
             GetPriceMethod();
         }
 
@@ -48,16 +48,16 @@ namespace WpfECommerceProject.ViewModels
             items = new ObservableCollection<item>(dump.GetItemsFromDB());
 
             //
-            thePrice = new ObservableCollection<int>();
+            thePrice = new ObservableCollection<decimal>();
             GetPriceMethod();
         }
 
         //------------------WCFClient:
         EndpointAddress endpoint = new EndpointAddress("http://trnlon11566:8081/GetPriceService");
 
-        private ObservableCollection<int> _thePrice;
+        private ObservableCollection<decimal> _thePrice;
 
-        public ObservableCollection<int> thePrice
+        public ObservableCollection<decimal> thePrice
         {
             get { return _thePrice; }
             set
