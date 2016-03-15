@@ -47,6 +47,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -68,6 +69,10 @@
     <Compile Include="CheckoutTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ASPECommerceApplication\ASPECommerceApplication.csproj">
+      <Project>{23f022a0-d9d9-4ccd-bb99-e995143ed6ab}</Project>
+      <Name>ASPECommerceApplication</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DatabaseLibrary\DatabaseLibrary.csproj">
       <Project>{9bb6a337-436f-4cc4-a045-287ab66bd740}</Project>
       <Name>DatabaseLibrary</Name>

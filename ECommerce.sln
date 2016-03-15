@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceCL", "WCFServiceC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFHost", "WCFHost\WCFHost.csproj", "{232A8409-4D03-4BB8-B276-7496DE1B1839}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPECommerceApplication", "ASPECommerceApplication\ASPECommerceApplication.csproj", "{23F022A0-D9D9-4CCD-BB99-E995143ED6AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPECommerceApplication.Tests", "ASPECommerceApplication.Tests\ASPECommerceApplication.Tests.csproj", "{4955235A-3201-4240-9CCF-5AFB1B3EE568}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +54,14 @@ Global
 		{232A8409-4D03-4BB8-B276-7496DE1B1839}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{232A8409-4D03-4BB8-B276-7496DE1B1839}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{232A8409-4D03-4BB8-B276-7496DE1B1839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F022A0-D9D9-4CCD-BB99-E995143ED6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F022A0-D9D9-4CCD-BB99-E995143ED6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F022A0-D9D9-4CCD-BB99-E995143ED6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F022A0-D9D9-4CCD-BB99-E995143ED6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4955235A-3201-4240-9CCF-5AFB1B3EE568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4955235A-3201-4240-9CCF-5AFB1B3EE568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4955235A-3201-4240-9CCF-5AFB1B3EE568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4955235A-3201-4240-9CCF-5AFB1B3EE568}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

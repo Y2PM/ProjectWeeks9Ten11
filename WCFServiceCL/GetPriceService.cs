@@ -16,9 +16,7 @@ namespace WCFService
         public decimal GetPrice()
         {
 
-
             List<item> items = dump.GetItemsFromDB();
-            
 
             foreach (item iteM in items)
             {
