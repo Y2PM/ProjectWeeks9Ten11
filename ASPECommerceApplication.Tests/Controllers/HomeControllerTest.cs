@@ -50,5 +50,20 @@ namespace ASPECommerceApplication.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+        /*
+        [TestMethod]
+        public void Test_IndexMethodInGetPriceController_ReturnsAViewResult_WhenCalled()
+        {
+             // Arrange
+            GetPriceController controller = new GetPriceController();
+
+            // Act
+            ViewResult result = controller.Index() as ViewResult;
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+        */
     }
 }

@@ -27,3 +27,21 @@ C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\Wpf
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WpfECommerceProject.pdb
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WCFServiceCL.dll
 C:\Users\joseph.bannert\Desktop\EcommerceProject\ECommerce.Project\bin\Debug\WCFServiceCL.pdb
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\ECommerce.Project.exe.config
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\ECommerce.Project.exe
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\ECommerce.Project.pdb
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\DatabaseLibrary.dll
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\EntityFramework.dll
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\log4net.dll
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\WpfECommerceProject.exe
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\WCFServiceCL.dll
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\DatabaseLibrary.pdb
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\WpfECommerceProject.pdb
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\EntityFramework.xml
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\log4net.xml
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin\Debug\WCFServiceCL.pdb
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\obj\Debug\ECommerce.Project.csprojResolveAssemblyReference.cache
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\obj\Debug\ECommerce.Project.exe
+C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\obj\Debug\ECommerce.Project.pdb
