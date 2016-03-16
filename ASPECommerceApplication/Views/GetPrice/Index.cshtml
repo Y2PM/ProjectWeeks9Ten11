@@ -1,0 +1,27 @@
+﻿@using (Ajax.BeginForm(new AjaxOptions
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "div1",
+        InsertionMode = InsertionMode.Replace
+    }))
+
+{
+    ViewBag.Title = "Buy items here.";
+    <input type="submit" value="Show Details" />
+}
+
+<div class="jumbotron">
+    <h2>@ViewBag.Title</h2>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Here all the items available to buy from the database can be displayed.</h2>
+        <p>
+            As the database items are added to and removed, you can come back here to see the updates.
+        </p>
+        @*<p><a class="btn btn-default" >Get Items &raquo;</a></p>*@
+        <div id="div1">
+        </div>
+    </div>
+</div>
