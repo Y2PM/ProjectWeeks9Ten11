@@ -6,6 +6,10 @@ using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ASPECommerceApplication;
 using ASPECommerceApplication.Controllers;
+using Moq;
+using System.Web;
+using System.Web.Routing;
+using DatabaseLibrary;
 
 namespace ASPECommerceApplication.Tests.Controllers
 {
@@ -51,19 +55,31 @@ namespace ASPECommerceApplication.Tests.Controllers
             Assert.IsNotNull(result);
         }
 
-        /*
-        [TestMethod]
-        public void Test_IndexMethodInGetPriceController_ReturnsAViewResult_WhenCalled()
-        {
-             // Arrange
-            GetPriceController controller = new GetPriceController();
 
-            // Act
-            ViewResult result = controller.Index() as ViewResult;
+        //[TestMethod]
+        //public void Test_IndexMethodInGetPriceController_ReturnsAViewResult_WhenCalled()
+        //{
+        //    // Arrange
+        //    var mockRequest = new Mock<HttpRequestBase>();
+        //    mockRequest.SetupGet(x => x.Headers).Returns(new System.Net.WebHeaderCollection { { "X-Requested-With", "XMLHttpRequest" } });//Not Ajax soon.
+        //    //mockRequest.SetupGet(x => x.Headers).Returns(new System.Net.WebHeaderCollection { { "X-Requested-With", "XMLHttpRequest" } });//Ajax.
+        //    //Set whether the request is ajax or not
 
-            // Assert
-            Assert.IsNotNull(result);
-        }
-        */
+        //    var context = new Mock<HttpContextBase>();
+        //    context.SetupGet(x => x.Request).Returns(mockRequest.Object);
+
+        //    //Use Dependency Injection to mock the database
+        //    Mock<ECommerceProjectSystemEntities> MockECommerceProjectSystemEntities = new Mock<ECommerceProjectSystemEntities>();
+
+        //    GetPriceController controller = new GetPriceController(MockECommerceProjectSystemEntities.Object);
+        //    controller.ControllerContext = new ControllerContext(context.Object, new RouteData(), controller);
+
+        //    // Act
+        //    ViewResult result = controller.Index() as ViewResult;
+
+        //    // Assert
+        //    Assert.IsNotNull(result);
+        //}
+
     }
 }

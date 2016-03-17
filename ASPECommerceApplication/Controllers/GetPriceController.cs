@@ -13,8 +13,21 @@ namespace ASPECommerceApplication.Controllers
     public class GetPriceController : Controller
     {
         public static GetPrice thePriceO = new GetPrice();
-        Dump dump = new Dump(new ECommerceProjectSystemEntities());
         decimal totprice;
+
+        //static ECommerceProjectSystemEntities contexT;//Injection.
+        //public GetPriceController(ECommerceProjectSystemEntities givenContext)//Construction.
+        //{
+        //    contexT = givenContext;
+        //}
+
+        ////Overload1
+        //public GetPriceController()
+        //{
+        //}
+
+        Dump dump = new Dump(new ECommerceProjectSystemEntities());
+
 
         // GET: GetItems
         public ActionResult Index()
