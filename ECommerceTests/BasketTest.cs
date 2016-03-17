@@ -43,8 +43,5 @@ namespace ECommerceTests
             //Assert
             Assert.AreEqual(1, basket.itemsList.Count);
         }
-
-
-       
     }
 }

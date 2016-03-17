@@ -17,6 +17,7 @@ namespace ECommerce.Project
 
         static void Main(string[] args)
         {
+
             /*
             //Testing the GetItems method
             Dump dump = new Dump(new ECommerceProjectSystemEntities());
@@ -43,9 +44,12 @@ namespace ECommerce.Project
             dump.addItemtoDB(item1);
             */
 
-            //Console.WriteLine(dump.GetItemsFromDB().Count);//Testing printing out # of item(s).
-            //Console.ReadLine();
-            
+            /*
+            Dump dump = new Dump(new ECommerceProjectSystemEntities());
+            Console.WriteLine(dump.GetItemsFromDB().Count);//Testing printing out # of item(s).
+            Console.ReadLine();
+            */
+
             /*
             //Testing update item in database:
             Dump dump = new Dump(new ECommerceProjectSystemEntities());
@@ -54,7 +58,7 @@ namespace ECommerce.Project
             
             /*
             //Testing the logger function.
-            string message = "Hello";
+            string message = "Hello 2";
             Console.WriteLine(message);
             logger.Info(message);
             Console.ReadLine();

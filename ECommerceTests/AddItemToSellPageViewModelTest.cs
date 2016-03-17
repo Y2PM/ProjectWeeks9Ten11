@@ -33,7 +33,6 @@ namespace ECommerceTests
             Assert.AreEqual(true, addbool2);
         }
 
-
         [TestMethod]
         public void Test_addToDB_AddsItemToDataBase_WhenCalled()
         {
