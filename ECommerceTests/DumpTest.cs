@@ -78,8 +78,6 @@ namespace ECommerceTests
 
             MockECommerceProjectSystemEntities.Setup(c => c.items).Returns(mockSet.Object);
 
-            int expectedValue = dump.GetItemsFromDB().Count + 1;
-
             //Act
             dump.addItemtoDB(item1);
 
