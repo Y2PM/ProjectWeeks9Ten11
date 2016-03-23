@@ -28,10 +28,7 @@ namespace WpfECommerceProject.ViewModels
             name = "name here";
             price = "0";
 
-
-
             dump = new Dump(new ECommerceProjectSystemEntities());
-
         }
         //------------------------------------------------        
 
@@ -58,7 +55,6 @@ namespace WpfECommerceProject.ViewModels
                 OnPropertyChanged("name");
             }
         }
-
 
         /////////////////////////////////////////////////////
         private ICommand _removeSomeItem;
@@ -139,7 +135,6 @@ namespace WpfECommerceProject.ViewModels
         {
             dump.updateItemPrice(name, Int32.Parse(price));
         }
-
         //
     }
 }
