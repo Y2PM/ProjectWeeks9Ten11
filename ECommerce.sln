@@ -27,6 +27,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA9DF3D7-B1D6-47FC-AAA5-C875202126EA}"
 	ProjectSection(SolutionItems) = preProject
 		CodeCoverage.bat = CodeCoverage.bat
+		SQLQuery4.sql = SQLQuery4.sql
 	EndProjectSection
 EndProject
 Global
