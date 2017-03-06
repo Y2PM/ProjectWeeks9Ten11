@@ -1,3 +1,4 @@
+IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[ECommerceProjectSystem].[dbo].[items]') AND TYPE IN (N'U'))
 DROP TABLE [ECommerceProjectSystem].[dbo].[items]
 
 CREATE TABLE [ECommerceProjectSystem].[dbo].[items]

@@ -45,3 +45,4 @@ C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\bin
 C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\obj\Debug\ECommerce.Project.csprojResolveAssemblyReference.cache
 C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\obj\Debug\ECommerce.Project.exe
 C:\Users\joseph.bannert\Desktop\getting project back maybe\ECommerce.Project\obj\Debug\ECommerce.Project.pdb
+C:\Users\joseph.bannert\Source\Repos\ProjectWeeks9Ten11\ECommerce.Project\bin\Debug\ECommerce.Project.exe.config
